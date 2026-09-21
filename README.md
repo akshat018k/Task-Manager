@@ -129,7 +129,7 @@ max-width: 480px
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/akshat018k/task-manager.git
 ```
 
 ### 2. Open the Project
