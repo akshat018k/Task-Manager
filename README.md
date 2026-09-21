@@ -253,7 +253,8 @@ https://jovial-malasada-347825.netlify.app/
 
 ## GitHub Repository
 
-🔗 **GitHub Repository:**  
+🔗 **GitHub Repository:** 
+https://github.com/akshat018k/Task-Manager.git
 
 ---
 
