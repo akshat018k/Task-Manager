@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./asset/css/mq.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="./asset/img/logo.png" alt="" />
+        </div>
+        <span class="logo-text"> Task Manager </span>
+      </div>
+
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <a href="#">Plan Better</a>
+          </li>
+          <li>
+            <a href="#">Do More</a>
+          </li>
+          <li>
+            <a href="#">Stay Productive</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="add-new">
+      <div class="main-text">
+        <h2>Add New Task</h2>
+      </div>
+
+      <form id="task-form">
+        <div class="form-gp">
+          <label for="task-title">Task title <span>*</span></label>
+          <input
+            type="text"
+            id="task-title"
+            name="task-title"
+            placeholder="Enter task title"
+          />
+        </div>
+
+        <div class="form-gp">
+          <label for="task-description">Description</label>
+          <textarea
+            id="task-description"
+            name="task-description"
+            placeholder="Enter task description"
+          ></textarea>
+        </div>
+
+        <div class="form-gp">
+          <label for="due-date">Due Date <span>*</span></label>
+          <input type="date" id="due-date" name="due-date" />
+        </div>
+
+        <div class="form-gp">
+          <label for="priority">Priority</label>
+          <select id="priority" name="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div class="form-btn">
+          <button type="submit">
+            <span>+</span>Add Task
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <section class="task-section">
+      <div class="task-controls">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="search-task" placeholder="Search tasks..." />
+        </div>
+
+        <div class="priority-filter">
+          <span class="filter-title">Filter by Priority:</span>
+
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn low-filter">Low</button>
+          <button class="filter-btn medium-filter">Medium</button>
+          <button class="filter-btn high-filter">High</button>
+        </div>
+
+        <div class="total-tasks">Total Tasks: <strong>3</strong></div>
+      </div>
+
+      <div class="tasks-container">
+        <div class="task-card high-task">
+          <div class="task-content">
+            <h3>Complete JavaScript Project</h3>
+
+            <p>
+              Build the Task Manager project with CRUD operations and
+              LocalStorage.
+            </p>
+
+            <div class="task-date">📅 20 Sep 2026</div>
+          </div>
+
+          <div class="task-priority high">● High</div>
+
+          <div class="task-actions">
+            <button class="edit-btn">✎ Edit</button>
+            <button class="delete-btn">🗑 Delete</button>
+          </div>
+        </div>
+
+        <div class="task-card medium-task">
+          <div class="task-content">
+            <h3>Read a Book</h3>
+
+            <p>Read at least 20 pages of a technical book.</p>
+
+            <div class="task-date">📅 22 Sep 2026</div>
+          </div>
+
+          <div class="task-priority medium">● Medium</div>
+
+          <div class="task-actions">
+            <button class="edit-btn">✎ Edit</button>
+            <button class="delete-btn">🗑 Delete</button>
+          </div>
+        </div>
+
+        <div class="task-card low-task">
+          <div class="task-content">
+            <h3>Go to Gym</h3>
+
+            <p>Complete a one-hour workout session.</p>
+
+            <div class="task-date">📅 18 Sep 2026</div>
+          </div>
+
+          <div class="task-priority low">● Low</div>
+
+          <div class="task-actions">
+            <button class="edit-btn">✎ Edit</button>
+            <button class="delete-btn">🗑 Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>
